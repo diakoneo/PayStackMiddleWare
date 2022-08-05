@@ -73,7 +73,6 @@ app.MapGet("/MoMo/getTransactionByAmount/{amount}", async (decimal amount, IMoMo
 
 app.MapGet("/MoMo/getTransactionWithDateRange/{datefrom}/{dateTo}", async (DateTime datefrom, DateTime dateTo, IMoMoService service) => await GetTransactionWithinPeriod(datefrom,dateTo, service));
 
-app.MapPost("/MoMo/WebHookURL", async (IMoMoService service, string req, string resp) => await WebHookURL(service, req, resp));
 #endregion
 
 #region Payment or Transactions Route-implementations
@@ -91,16 +90,18 @@ async Task<IResult> makeTransaction(MoMo momo, IMoMoService service){
     };
 
     var res = await service.makePayment(payLoad);
+    return Results.Ok(res);
+
+    /*
     if (res.status.ToLower() == @"true")
     {
-        /* verify the txn */
          vresp = await service.VerifyTransaction(res.data.reference);
          return Results.Ok(vresp);
     }
     else
     {
         return Results.NotFound("An error occured");
-    }
+    }*/
 }
 
 async Task<IResult> GetPayments(IMoMoService service){
@@ -153,10 +154,6 @@ async Task<IResult> CreateCustomer(Customer customer, ICustomerService service)
 
 #region
 
-async Task<IResult> WebHookURL(IMoMoService service, string req, string resp)
-{
-    return Results.Ok();
-}
 
 #endregion
 

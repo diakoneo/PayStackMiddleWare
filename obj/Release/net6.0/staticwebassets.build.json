@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "6p9xNcJ7kuoSevqIU1CcDG4LzW4B/QI2Ky+XwJIu5d0=",
+  "Source": "PayStackMiddleWare.API",
+  "BasePath": "_content/PayStackMiddleWare.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,12 @@
+/Users/nana/Projects/PayStack-published/PayStackMiddleWare.API
+/Users/nana/Projects/PayStack-published/appsettings.Development.json
+/Users/nana/Projects/PayStack-published/appsettings.json
+/Users/nana/Projects/PayStack-published/PayStackMiddleWare.API.dll
+/Users/nana/Projects/PayStack-published/PayStackMiddleWare.API.deps.json
+/Users/nana/Projects/PayStack-published/PayStackMiddleWare.API.runtimeconfig.json
+/Users/nana/Projects/PayStack-published/PayStackMiddleWare.API.pdb
+/Users/nana/Projects/PayStack-published/Microsoft.OpenApi.dll
+/Users/nana/Projects/PayStack-published/Newtonsoft.Json.dll
+/Users/nana/Projects/PayStack-published/Swashbuckle.AspNetCore.Swagger.dll
+/Users/nana/Projects/PayStack-published/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/nana/Projects/PayStack-published/Swashbuckle.AspNetCore.SwaggerUI.dll
